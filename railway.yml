@@ -1,0 +1,7 @@
+services:
+  web:
+    build:
+      builder: nixpacks
+    start: npm start
+    enviromentOverrides:
+      NODE_ENV: production
