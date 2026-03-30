@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1774765313670,
+      "tag": "0000_lovely_lenny_balinger",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1774768322365,
+      "tag": "0001_mysterious_photon",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1774796435750,
+      "tag": "0002_nostalgic_doorman",
+      "breakpoints": true
+    }
+  ]
+}

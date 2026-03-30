@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE `chat_sessions` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`user_id` int NOT NULL,\n\t`session_type` varchar(50) NOT NULL DEFAULT 'onboarding',\n\t`messages` json,\n\t`extracted_profile` json,\n\t`chat_status` enum('active','completed','analyzed') NOT NULL DEFAULT 'active',\n\t`created_at` timestamp NOT NULL DEFAULT (now()),\n\t`updated_at` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n\tCONSTRAINT `chat_sessions_id` PRIMARY KEY(`id`)\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 24BYdFiLBEnj5wy.7069700a1056 --database Wq8GtZxy5NWThFp4gu5tHy --execute CREATE TABLE `chat_sessions` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`user_id` int NOT NULL,\n\t`session_type` varchar(50) NOT NULL DEFAULT 'onboarding',\n\t`messages` json,\n\t`extracted_profile` json,\n\t`chat_status` enum('active','completed','analyzed') NOT NULL DEFAULT 'active',\n\t`created_at` timestamp NOT NULL DEFAULT (now()),\n\t`updated_at` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n\tCONSTRAINT `chat_sessions_id` PRIMARY KEY(`id`)\n);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1776
+}
