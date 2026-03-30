@@ -3,5 +3,6 @@ services:
     build:
       builder: nixpacks
     start: npm start
-    enviromentOverrides:
+    environmentVariables:
       NODE_ENV: production
+    buildCommand: npm install --legacy-peer-deps && npm run build
