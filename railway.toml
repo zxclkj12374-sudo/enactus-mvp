@@ -1,0 +1,10 @@
+[build]
+builder = "nix"
+buildCommand = "npm install --legacy-peer-deps && npm run build"
+
+[env]
+NODE_ENV = "production"
+NODE_VERSION = "20.9.0"
+
+[start]
+cmd = "npm start"
