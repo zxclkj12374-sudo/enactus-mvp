@@ -1,9 +1,0 @@
-services:
-  web:
-    build:
-      builder: nixpacks
-      buildCommand: npm install --legacy-peer-deps && npm run build
-    start: npm start
-    environmentVariables:
-      NODE_ENV: production
-      NODE_VERSION: 20.9.0
